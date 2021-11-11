@@ -1,0 +1,104 @@
+.sec2{
+   background: rgba(177, 15, 177, 0.8);
+   padding:1em 0;
+   height: clamp(20rem,30vw,22rem);
+   color:white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.sec2 h2{
+   font-weight: 300;
+   font-size: 1.8rem;
+   border-bottom: 2px solid whitesmoke;
+}
+
+.sec2 section div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: .5em;
+   position: relative;
+}
+
+.sec2 section .btn_add{
+   display: block;
+   width:100%;
+   padding:.3em 0;
+   border-radius: .2em;
+   background: none;
+   border:3px solid rgb(194, 0, 0);
+   color:rgb(194, 0, 0);
+   font-size: 1.1rem;
+   cursor: pointer;
+   font-weight: 700;
+   letter-spacing: 1px;
+   transition: .3s;
+}
+
+.sec2 section .btn_add:hover{
+   background: rgb(192, 3, 192);
+}
+
+.sec2 div input:focus{
+   border:2px solid orangered;
+}
+
+.sec2 section div span{
+   pointer-events: none;
+   position: absolute;
+   color:black;
+   font-size: .8rem;
+   top:50%;
+   left:50%;
+   z-index: 1;
+   background: rgb(231, 231, 231);
+   padding:.1em;
+   transform: translate(-50%,-50%);
+   transition: .3s;
+}
+
+.sec2 div input{
+   width:20em;
+   height:45px;
+   padding:0 1em;
+   font-size: clamp(.9rem,2vw,1.5rem);
+   outline: 0;
+   border:2px solid black;
+   background: rgb(231, 231, 231);
+   border-radius: .2em;
+   transition: .3s;
+}
+
+.sec2 div svg{
+   font-size: 3.7rem;
+}
+
+.sec2 .clr{
+   color:rgb(194, 0, 0);
+}
+
+.sec2 h2{
+   font-weight: 300;
+   font-size: 1.8rem;
+   border-bottom: 2px solid whitesmoke;
+}
+
+@media (max-width: 480px){
+   .sec2 section{
+      width:80%;
+   }
+   .sec2 div input{
+      width:100%;
+   }
+   .sec2 h2{
+      font-size: clamp(1rem,6vw,1.8rem)
+   }
+   .sec2 p{
+      font-size: clamp(.8rem,3vw,1rem);
+      text-align: center;
+   }
+}
+

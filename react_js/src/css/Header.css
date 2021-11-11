@@ -1,0 +1,81 @@
+header.header1 figure{
+   height:clamp(18rem,30vw,30vw);
+   overflow: hidden;
+   position: relative;
+   border-bottom: 2px solid black;
+}
+
+header.header1 figure img{
+   width: 100%;
+}
+
+header.header1 figcaption{
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   width:60%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+header.header1 figcaption h1,
+header.header1 figcaption p{
+   color:white;
+   
+}
+
+header.header1 figcaption h1{
+   font-size: 2.5rem;
+   font-weight: 300;
+   text-shadow: 3px 3px 3px black;
+}
+
+header.header1 figcaption p{
+   text-align: center;
+   font-size: .9rem;
+   margin:1vw 0;
+   text-shadow: 2px 2px 2px black;
+}
+
+.fig_btn{
+   outline: 0;
+   background: rgb(221, 70, 108);
+   border:2px solid rgb(255, 0, 119);
+   border-radius: .2em;
+   color:rgb(245, 239, 239);
+   padding:.6em 2em;
+   cursor: pointer;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: 300;
+   font-size: 1rem;
+   transition: .3s;
+}
+
+.fig_btn:hover{
+  background: rgb(184, 67, 96);
+  border:2px solid rgb(255, 0, 0);
+}
+
+@media (max-width: 768px){
+   header.header1 figcaption{
+      width:100%;
+   }
+}
+
+@media (max-width: 480px){
+   header.header1 figure{
+      height:clamp(15rem,30vw,30vw);
+   }
+   header.header1 figure img{
+      height: 100%;
+   }
+   header.header1 figcaption p{
+      font-size: clamp(.6rem,3vw,.9rem);
+      margin:2em 0;
+   }
+   header.header1 figcaption h1{
+      font-size: clamp(1.7rem,8vw,2.5rem);
+   }
+}

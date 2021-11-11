@@ -1,0 +1,16 @@
+.sec4 .sec4pinf{
+   text-align: center;
+   font-weight: 300;
+   margin-bottom: 2em;
+}
+
+.sec4{
+   padding-bottom: 2em;
+   border-bottom: 2px solid black;
+}
+
+.sec4 div{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}

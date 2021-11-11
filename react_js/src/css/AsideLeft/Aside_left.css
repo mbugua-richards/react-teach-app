@@ -1,0 +1,63 @@
+.sec_aside_main .left_as h1{
+   font-size: 3rem;
+   font-weight: 300;
+   margin-bottom: 1em;
+}
+
+.sec_aside_main .left_as p{
+   margin-bottom: 3em;
+}
+
+.sec_aside_main .left_as section.cCont{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 4em;
+}
+
+.sec_aside_main .left_as section.cCont .circleCont h2{
+   font-weight: 300;
+   margin-bottom: 1em;
+}
+
+.sec_aside_main .left_as section.cCont .circleCont{
+   width:45%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.sec_aside_main .left_as section.cCont .circleCont .circle{
+   position: relative;
+   border:2px solid #303030;
+   width:250px;
+   height:250px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.sec_aside_main .left_as section.cCont .circleCont .circle .fill{
+   position: absolute;
+   bottom:0;
+   width: 100%;
+}
+
+.sec_aside_main .left_as section.cCont .circleCont .circle p{
+   position: absolute;
+   left:50%;
+   top:50%;
+   transform: translate(-50%,-50%);
+   font-size: 3rem;
+   font-weight: 300;
+}
+
+@media (max-width: 768px){
+   .sec_aside_main .left_as section.cCont{
+      flex-direction: column;
+   }
+   .sec_aside_main .left_as section.cCont .circleCont{
+      margin-bottom: 3em;
+      width:100%;
+   }
+}

@@ -1,0 +1,55 @@
+.fig1{
+   width:80%;
+   margin:2em auto;
+   height:45vw;
+   position: relative;
+}
+
+.fig1 figcaption{
+   position: absolute;
+   left:0;
+   top: 47%; transform: translateY(-47%);
+   z-index: 999;
+   width:100%;
+   text-align: center;
+   padding:0 1em;
+}
+
+.fig1 figcaption h1{
+   font-size: clamp(3rem, 4vw, 3.5rem);
+   color:white;
+   font-weight: 700;
+   text-shadow: 2px 2px 2px black;
+}
+
+.fig1 figcaption p{
+   color:white;
+   font-size: clamp(.8rem, 1vw, 1rem);
+   text-shadow: 1px 1px 1px blue;
+}
+
+.fig1 figcaption p:nth-child(2){
+   margin:1em 0;
+}
+
+@media (max-width: 1024px){
+   .fig1 figcaption h1{
+      font-size: clamp(2rem, 4vw, 3.5rem);
+   }
+}
+
+@media (max-width: 768px){
+   .fig1 figcaption h1{
+      font-size: clamp(1.2rem, 4vw, 2rem);
+   }
+   .fig1 figcaption p{
+      font-size: clamp(.5rem, 2vw, .8rem);
+   }
+}
+
+@media (max-width: 480px){
+   .fig1{
+      width:95%;
+      height:60vw;
+   }
+}

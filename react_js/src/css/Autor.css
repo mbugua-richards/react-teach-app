@@ -1,0 +1,133 @@
+.sec-autor{
+   display: flex;
+   height:250px;
+   border:2px solid black;
+   border-radius: 1em;
+   padding:2em;
+   position: relative;
+}
+
+.sec-autor .aut-inf{
+   width:20%;
+   height:100%;
+}
+
+.sec-autor .aut-inf p{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom:0;
+   font-weight: 700;
+   height:20%;
+   text-align: center;
+}
+
+.sec-autor .aut-inf div{
+   height:80%;
+   width:90%;
+   border-radius: 50%;
+   overflow: hidden;
+   margin:0 auto;
+   position: relative;
+}
+
+.sec-autor .aut-inf div img{
+   position: absolute;
+   left:50%;
+   top:50%;
+   transform: translate(-50%,-50%);
+}
+
+.sec-autor .aut-text{
+   width:80%;
+}
+
+.sec-autor .aut-text p{
+   font-size: clamp(.5rem,3vw,.8rem) !important;
+}
+
+.sec-autor .aut-icons{
+   position: absolute;
+   right:.5em;
+   bottom: .5em;
+   width: 50%;
+   display: flex;
+   justify-content: space-around;
+}
+
+.sec-autor .aut-icons a{
+   font-size: 2rem;
+   transition: .3s;
+}
+
+.sec-autor .aut-icons a:nth-child(1){
+   color: rgb(56, 56, 56);
+}
+.sec-autor .aut-icons a:nth-child(2){
+   color: rgb(252, 33, 33);
+}
+.sec-autor .aut-icons a:nth-child(3){
+   color: rgb(18, 136, 233);
+}
+.sec-autor .aut-icons a:nth-child(4){
+   color: rgb(209, 154, 3);
+}
+
+.sec-autor .aut-icons a:nth-child(1):hover{
+   color: rgb(26, 25, 25);
+}
+.sec-autor .aut-icons a:nth-child(2):hover{
+   color: rgb(175, 25, 25);
+}
+.sec-autor .aut-icons a:nth-child(3):hover{
+   color: rgb(5, 80, 141);
+}
+.sec-autor .aut-icons a:nth-child(4):hover{
+   color: rgb(153, 112, 0);
+}
+
+.sec-autor .aut-text p{
+   line-height: 1.5em;
+}
+
+.sec-autor .aut-text span{
+   font-weight: 700;
+   color:#303030;
+   border-bottom: 2px solid #303030;
+   margin-right: .5em;
+}
+
+.sec-autor .aut-inf div img{
+   height: 100%;
+}
+
+@media (max-width: 1024px){
+   .sec-autor .aut-inf{
+      width:10em;
+   }
+   .sec-autor .aut-text{
+      width:70%;
+      margin: 0 0 0 auto;
+   }
+}
+
+@media (max-width: 768px){
+   .sec-autor .aut-text p{
+      display: none;
+   }
+   .sec-autor{
+      flex-direction: column;
+      padding: 0;
+   }
+   .sec-autor .aut-icons{
+      position: static;
+      width: 100%;
+      justify-content: space-around;
+   }
+   .sec-autor .aut-inf{
+      width:100%;
+   }
+   .sec-autor .aut-inf div{
+      width:11em;
+   }
+}

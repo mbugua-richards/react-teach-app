@@ -1,0 +1,30 @@
+.srchDiv{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 1em;
+}
+
+.srchInp{
+   width: 50%;
+   padding:1em;
+   border:1px solid black;
+   outline: 0;
+   font-size: 1.1rem;
+   border-radius: .2em;
+}
+
+.srchDiv svg{
+   font-size: 3rem;
+}
+
+@media (max-width: 480px){
+   .srchInp{
+      width:80%;
+      padding:.5em;
+      font-size: 1rem;
+   }
+   .srchDiv svg{
+      font-size: 2rem;
+   }
+}

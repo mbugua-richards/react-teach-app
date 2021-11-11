@@ -1,0 +1,41 @@
+footer{
+   border-top: 2px solid black;
+   background: rgb(238, 238, 224);
+   padding-bottom:1em;
+}
+
+footer p{
+   text-align: center;
+   margin: 2em 0;
+   font-size: clamp(.8rem,4vw,1rem);
+}
+
+footer div{
+   display: flex;
+   justify-content: space-around;
+}
+
+footer ul{
+   list-style: none;
+}
+
+footer li{
+   margin:1em 0;
+   text-align: center;
+}
+
+footer a{
+   color: #303030;
+   text-decoration: none;
+   transition: .3s;
+}
+
+footer a:hover{
+   color:rgb(64, 0, 109);
+   text-shadow: 1px 1px 1px black;
+}
+
+.footer-red{
+   color:brown;
+   margin:0;
+}
