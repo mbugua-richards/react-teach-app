@@ -6,7 +6,7 @@ import '../../css/AsideLeft/sec-aside-main.css'
 const Aside_Main = () => {
    return (
       <section className='sec_aside_main'>
-         <AsideLeft colour='yellow' percent='50'/>
+         <AsideLeft />
          
          <Aside title='Context menu'/>         
       </section>

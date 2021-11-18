@@ -23,7 +23,7 @@
 }
 
 .sec-autor .aut-inf div{
-   height:80%;
+   height:10vw;
    width:90%;
    border-radius: 50%;
    overflow: hidden;
@@ -109,6 +109,9 @@
       width:70%;
       margin: 0 0 0 auto;
    }
+   .sec-autor .aut-inf div{
+      height:80%;
+   }
 }
 
 @media (max-width: 768px){
@@ -128,6 +131,8 @@
       width:100%;
    }
    .sec-autor .aut-inf div{
-      width:11em;
+      margin-top: 1em;
+      width:9em;
+      height:70%;
    }
 }

@@ -4,7 +4,7 @@ import Circle from './other/Circle'
 import Recent from './Recent'
 import Autor from './other/Autor'
 
-const Aside_left = ({ colour, percent }) => {
+const Aside_left = () => {
    return (
       <article className='left_as'>
          <h1>Lorem ipsum sit amet</h1>
