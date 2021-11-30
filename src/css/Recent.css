@@ -39,6 +39,8 @@
 .sec-recent li{
    font-weight: 700;
    margin-bottom: 2em;
+   display:flex;
+   align-items: center;
 }
 
 .sec-recent li a{
